@@ -896,6 +896,12 @@ SAMPLER(sampler_Emission2ndMap);
 SAMPLER(sampler_AudioLinkMask);
 SAMPLER(sampler_OutlineTex);
 
+// PreColor
+#if LIL_RENDER == 2 && !defined(LIL_FUR) && !defined(LIL_GEM) && !defined(LIL_REFRACTION)
+TEXTURE2D(_PreColorTex);
+SAMPLER(sampler_PreColorTex);
+#endif
+
 // AudioLink
 #if defined(LIL_FEATURE_AUDIOLINK_PACKAGE)
 #include "Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLink.cginc"

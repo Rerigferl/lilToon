@@ -21,6 +21,7 @@ namespace lilToon
         private readonly lilMaterialProperty invisible              = new lilMaterialProperty("_Invisible", PropertyBlock.Base);
         private readonly lilMaterialProperty cutoff                 = new lilMaterialProperty("_Cutoff", PropertyBlock.Base);
         private readonly lilMaterialProperty preColor               = new lilMaterialProperty("_PreColor", PropertyBlock.Base);
+        private readonly lilMaterialProperty preColorTex            = new lilMaterialProperty("_PreColorTex", PropertyBlock.Base);
         private readonly lilMaterialProperty preOutType             = new lilMaterialProperty("_PreOutType", PropertyBlock.Base);
         private readonly lilMaterialProperty preCutoff              = new lilMaterialProperty("_PreCutoff", PropertyBlock.Base);
         private readonly lilMaterialProperty flipNormal             = new lilMaterialProperty("_FlipNormal", PropertyBlock.Base);
@@ -630,6 +631,7 @@ namespace lilToon
                 invisible,
                 cutoff,
                 preColor,
+                preColorTex,
                 preOutType,
                 preCutoff,
                 flipNormal,
