@@ -408,7 +408,7 @@ float4 frag(v2f input LIL_VFACE(facing)) : SV_Target
             #if defined(LIL_TRANSPARENT_PRE)
                 float4 preColor = _PreColor;
                 preColor *= LIL_SAMPLE_2D(_PreColorTex, sampler_MainTex, fd.uvMain);
-
+                preColor.a *= LIL_SAMPLE_2D(_PreAlphaMask, sampler_MainTex, fd.uvMain).r;
                 fd.col *= preColor;
                 clip(fd.col.a - _PreCutoff);
                 if(_PreOutType) return _PreOutType == 2 ? preColor : fd.col;

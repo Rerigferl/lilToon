@@ -900,7 +900,7 @@ SAMPLER(sampler_OutlineTex);
 // PreColor
 #if LIL_RENDER == 2 && !defined(LIL_FUR) && !defined(LIL_GEM) && !defined(LIL_REFRACTION)
 TEXTURE2D(_PreColorTex);
-SAMPLER(sampler_PreColorTex);
+TEXTURE2D(_PreAlphaMask);
 #endif
 
 // AudioLink

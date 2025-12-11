@@ -154,6 +154,7 @@ Shader "_lil/[Optional] lilToonLiteOverlay"
         // Pre
         [lilHDR] [MainColor]                            _PreColor               ("sColor", Color) = (1,1,1,1)
         [NoScaleOffset]                                 _PreColorTex            ("Texture", 2D) = "white" {}
+        [NoScaleOffset]                                 _PreAlphaMask           ("AlphaMask", 2D) = "white" {}
         [lilEnum]                                       _PreOutType             ("sPreOutTypes", Int) = 0
                                                         _PreCutoff              ("Pre Cutoff", Range(-0.001,1.001)) = 0.5
         [lilEnum]                                       _PreCull                ("Cull Mode|Off|Front|Back", Int) = 2
