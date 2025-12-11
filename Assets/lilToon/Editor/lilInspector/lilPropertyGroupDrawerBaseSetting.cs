@@ -231,7 +231,7 @@ namespace lilToon
 
                     LocalizedProperty(preCull);
                     LocalizedProperty(preZwrite);
-                    LocalizedPropertyColorWithAlpha(preColor);
+                    LocalizedPropertyTexture(mainColorRGBAContent, preColorTex, preColor);
                     LocalizedProperty(preCutoff);
 
                     edSet.isShowPrePreset = lilEditorGUI.DrawSimpleFoldout(GetLoc("sPresets"), edSet.isShowPrePreset, isCustomEditor);
