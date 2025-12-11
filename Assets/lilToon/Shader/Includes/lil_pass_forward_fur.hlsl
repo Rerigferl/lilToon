@@ -178,6 +178,8 @@ float4 frag(v2f input) : SV_Target
         float borderMin = _EnvRimBorder - _EnvRimBlur * 0.5;
         float borderMax = _EnvRimBorder + _EnvRimBlur * 0.5;
         float fakerim = saturate((fd.ln - fd.vl - borderMin) / saturate(borderMax - borderMin + fwidth(fd.ln - fd.vl) * _AAStrength));
+        float rimMask = LIL_SAMPLE_2D(_EnvRimBlendMask, sampler_MainTex, fd.uvMain).r;
+        fakerim = lerp(0, fakerim, saturate(rimMask));
         fd.lightColor += saturate(fd.indLightColor - fd.lightColor) * fakerim;
         fd.indLightColor = 0;
     }

@@ -38,6 +38,7 @@ Shader "_lil/[Optional] lilToonFurOnlyCutout"
                         _DitherMaxValue             ("Max Value", Float) = 255
                         _EnvRimBorder               ("[VRCLV] Rim Border", Range(0, 3)) = 3.0
                         _EnvRimBlur                 ("[VRCLV] Rim Blur", Range(0, 1)) = 0.35
+        [NoScaleOffset] _EnvRimBlendMask            ("Mask", 2D) = "white" {}
 
         //----------------------------------------------------------------------------------------------------------------------
         // Main

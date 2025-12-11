@@ -147,6 +147,7 @@ namespace lilToon
                         LocalizedProperty(aaStrength);
                         LocalizedProperty(envRimBorder);
                         LocalizedProperty(envRimBlur);
+                        LocalizedPropertyTexture(EditorGUIUtility.TrTempContent("[VRCLV] Mask"), envRimBlendMask);
                     }
                     if (!isFakeShadow && renderingModeBuf == RenderingMode.Cutout || (isMulti && transparentModeMat.floatValue == 1.0f))
                     {

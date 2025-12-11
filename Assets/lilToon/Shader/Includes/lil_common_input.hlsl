@@ -888,6 +888,7 @@ TEXTURE2D(_FurMask);
 TEXTURE2D(_FurLengthMask);
 TEXTURE2D(_FurVectorTex);
 TEXTURE2D(_TriMask);
+TEXTURE2D(_EnvRimBlendMask);
 SAMPLER(sampler_MainTex);
 SAMPLER(sampler_Main2ndTex);
 SAMPLER(sampler_Main3rdTex);
